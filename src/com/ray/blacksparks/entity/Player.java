@@ -406,12 +406,12 @@ public class Player extends Entity {
             }
 
             //debug red box
-            //g2.setColor(java.awt.Color.RED);
-            //g2.drawRect(tempScreenX + solidArea.x, tempScreenY + solidArea.y, solidArea.width, solidArea.height);
+            g2.setColor(java.awt.Color.RED);
+            g2.drawRect(tempScreenX + solidArea.x, tempScreenY + solidArea.y, solidArea.width, solidArea.height);
         }
 
         //debug attack box
-        /*if(attacking) {
+        if(attacking) {
             g2.setColor(new Color(255, 0, 0, 100));
 
             int adjustX = 0;
@@ -424,7 +424,7 @@ public class Player extends Entity {
             int screenYbox = tempScreenY + adjustY;
 
             g2.fillRect(screenXbox, screenYbox, attackArea.width, attackArea.height);
-        }*/
+        }
 
         orbM.draw(g2);
     }

@@ -144,17 +144,17 @@ public class Demon extends Enemy {
                 }
             }
             // should use parents one
-            //g2.setColor(Color.RED);
-            //g2.drawRect(screenX + solidArea.x, screenY + solidArea.y, solidArea.width, solidArea.height);
+            g2.setColor(Color.RED);
+            g2.drawRect(screenX + solidArea.x, screenY + solidArea.y, solidArea.width, solidArea.height);
 
-            /* attack box
+            // attack box
             if(debugAttackBox != null) {
                 int screenAttackX = debugAttackBox.x - gp.cameraX;
                 int screenAttackY = debugAttackBox.y - gp.cameraY;
                 g2.setColor(new Color(255, 255, 0, 150));
                 g2.fillRect(screenAttackX, screenAttackY, debugAttackBox.width, debugAttackBox.height);
                 debugAttackBox = null;
-            }*/
+            }
         }
     }
 
